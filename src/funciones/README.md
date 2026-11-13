@@ -175,4 +175,66 @@ existen casos en os que necesitamos mas exprecividad en la *anotacion de tipos* 
  - tuple|dict -> puede ser datos de tipo tupla o diccionario
  - list[srt|int] -> lista cuuyos elementos pueden ser cadenas de texto o enteros
  - dict[srt|int,float|int] -> diccioanrio
+<<<<<<< HEAD
 
+=======
+## closure
+una `closure` o `clausura` son funciones que establececn una funcion interioi, o retornan una funcion estas funciones se caracterizan por recrear el valor de los argumentos que se le pasa.
+```python
+def multiplicando(n):
+    def multiplicador(m):
+        return n*m
+    return multiplicador
+```
+
+## Programacion funcional
+
+Python es un lenguaje de programación multiparadigma, y uno de sus paradigmas que mejor funcionan es la `funcional`.
+
+Python usa tres `map()`, `filter()`, `reduce()`, pero nosotros solo usaremos `map()` y `filter()`.
+
+Estas funciones integradas de python sirven para procesar y transformar colecciones de datos(listas,diccionarios) de manera muy eficiente:
+
+> [!tip] Importante:
+> Las funciones `map()` y `filter()` reciben dos parámetros primero la funcion a ejecutar y segundo el iterable en que va actuar. La funcion que recibe como parametro puede ser normal (`def`) o puede ser anonima(`lambda`).
+
+### 1. map()
+
+map aplica una funcion especifica a cada una de los elementos de una coleccion (iterable) y devuelve un nuevo iterable con los resultados.
+
+```python
+## De una lista de numeros deseamos calcular la potencia 2 de cada numero
+numeros:list[int]=[2,4,6,8,7]
+
+## Cuando deseamos trabajar con una funcion anonima tenemos que declarar primero la funcion antes de pasarla por parametro.
+def f(x):
+    return x**2
+
+## Una vez creada pasamos la funcion como parametro
+map(f,numeros)
+
+## Cuando deseamos trabajar con funciones anonimas usamos lambda dentro del parametro.
+map(lambda x:x**2,numeros)
+```
+
+### 2. Filter()
+
+Filter para cada elemento de una coleccion por una funcion y soli se queda con aquellos elementos donde la funcion devuelve True (es decir, filtra los datos segun su condicion).
+
+```python
+# Imagina
+
+filter(lambda n:n % 2==0,numeros)
+```
+
+> [!WARNING] Nota importante
+> Tanto `map()` como `filter()` no devuelve lista directamente, sino iteradores. Esto es para ahorrar memoria (evaluacion perezosa o lazy evaluation). Si quieres ver el resultado como una lista tradicional, siempre debes envolver en `list()`.
+# de una lsita de numeros enteros  deseamos calcular la potencia 2 de cadadd numero 
+```python
+numeros:list[int] ¨[2,4,7,8,6]
+## cuando deseamos trabajar con una funcion anonima tenemsos que declarar primero la funcion nates de pasarla por parametro
+def (x):
+    return  x**2
+## cuando deseam os trabajar con funciones anonimas usa,mos lambda  dentro ndel parametro
+map(lambda x:x**2,numero)
+```
