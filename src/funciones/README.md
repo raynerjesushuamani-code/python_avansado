@@ -238,3 +238,5 @@ def (x):
 ## cuando deseam os trabajar con funciones anonimas usa,mos lambda  dentro ndel parametro
 map(lambda x:x**2,numero)
 ```
+## compresion de listas    
+## comprension diccionarios
