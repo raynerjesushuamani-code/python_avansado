@@ -239,4 +239,5 @@ def (x):
 map(lambda x:x**2,numero)
 ```
 ## compresion de listas    
+
 ## comprension diccionarios
