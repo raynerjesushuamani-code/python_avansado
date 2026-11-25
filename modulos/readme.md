@@ -23,6 +23,21 @@ import matematicas
 ## para ahcer uso una de las funciones tengo que accder al archivo luego un punto y el nombre de dato funcion qure deseamoas utilizar 
 matematicas.resta(5,8)
 ```
+### 3. 
+a veces es necsario importar solo una parte del modulo esto se usa c uaando deseamos utilizar partes especificas de un modulo para esto utilizamos `from_modulo import parte_especifica`
+`mate.py`
+```python
+def resta(a,b):
+    return a-b
+def suma(a,b):
+    return a+b
+PI=3.1415
+```
 
+`main.py`
+```python
+from mate import PI
+```
+## PAQUETES (CARPETAS DE MODULOS)
 
 
