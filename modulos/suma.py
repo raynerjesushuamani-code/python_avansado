@@ -1,4 +1,4 @@
-from    mate import PI,suma
+from  modulos.geomatria.mate import PI,
 print(PI)
 
 

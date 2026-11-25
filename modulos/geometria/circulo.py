@@ -1,3 +1,4 @@
-from ..mate import PI
+
 def area_circulo(radio):
-    return PI*(radio**2)
+    return 3.1415*(radio**2)
+    
